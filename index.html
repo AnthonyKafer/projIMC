@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto IMC</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripto/scripto.js" defer></script>
+</head>
+<body>
+    <div class="calculatorContainer">
+        <h1 class="title">Calculador de IMC</h1>
+        <form id="calculatorForm">
+            <label for="heigthInput" id="label1">Altura:</label>
+            <input type="text" id="heigthInput" name="heigthInput" placeholder="Exemplo: 1,75">
+
+            <label for="weigthInput" id="label2">Peso:</label>
+            <input type="text" id="weigthInput" name="weigthInput" placeholder="Exemplo: 70.5">
+        <div id="buttonsContainer">
+            <button id="submitButton" disabled>Enviar</button>
+            <button id="cleanButton" disabled>Limpar</button >
+        </div>    
+        </form>
+    </div>
+    <div class="resultContainer hide">
+        <h1>Seu IMC: <span id="imc">16.3</span></h1>
+        <h2>Situação atual: <span id="info">Normal</span></h2>
+        <p id="description">Confira as classificações:</p>
+        <div id="tableContainer">
+            <div id="tableHeader">
+                <h4>IMC</h4>
+                <h4>Classificação</h4>
+                <h4>Obesidade</h4>
+            </div>
+            
+        </div>
+        <button id="backButton">Voltar</button>
+    </div>
+</body>
+</html>
