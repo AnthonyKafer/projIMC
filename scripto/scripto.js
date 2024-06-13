@@ -118,8 +118,12 @@ function validNumbers(text){
   el.addEventListener("input",(e)=>{
     if(heigthInput.value || weigthInput.value){
       cleanBtn.removeAttribute("disabled")
+    if(heigthInput.value && weigthInput.value){
+      calcBtn.removeAttribute("disabled")
+    }
     }else{
       cleanBtn.setAttribute("disabled", true)
+      calcBtn.setAttribute("disabled", true)
     }
   })
 })
@@ -181,6 +185,7 @@ cleanBtn.addEventListener("click", (e)=>{
   e.preventDefault()  
   clearInputs()
   cleanBtn.setAttribute("disabled", true) 
+  calcBtn.setAttribute("disabled", true)
 })
 
 backBtn.addEventListener("click", ()=>{

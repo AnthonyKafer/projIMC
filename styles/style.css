@@ -59,7 +59,9 @@ button{
     border-radius: 2rem ;
     background-color: rgb(62, 105, 221);
     color: whitesmoke;
+    min-width: 100px;
 }
+
 
 input, label{
     margin-top: 0.5rem;
